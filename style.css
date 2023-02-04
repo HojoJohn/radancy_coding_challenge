@@ -1,3 +1,8 @@
+
+* {
+
+    font-family: Arial;
+   }
 header {
     display: flex;
     align-items: center;
@@ -21,7 +26,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 370px;
-    
+
 }
 
 .banner img {
@@ -37,9 +42,280 @@ header {
     right: 0;
     width: 550px;
     height: 100%;
-    background-color: rgba(0, 128, 0, 0.7);
+    background-color: rgba(51, 122, 105, 0.8);
     -webkit-transform: skew(-20deg);
     -ms-transform: skew(-20deg);
     transform: skew(-20deg);
 }
+h2{
+    text-align: center;
+    color: #00945f;
+}
+h3{
+    color: #00945f;
+}
+p{
+    text-align: left;
+    margin-left: 15px;
+}
+hr{
+    width: 5%;
+    align-items: center;
+    color: green;
+}
+.title-next {
+    background-color: #ebf7f5;
+    height: 200px;
+    
+}
 
+.title-sc {
+    background-color: #00945f;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    background-color: #00945f;
+    height: 25px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+button {
+    box-shadow: none;
+}
+
+.text-container {
+display: flex;
+flex-direction: column;
+max-width: 600px;
+margin: 0 auto;
+padding: 0 20px;
+}
+.container-next{
+    background-color: #ebf7f5;
+}
+.btn {
+    display: inline-block;
+    background-color: #e97300;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    height: 25px;
+    cursor: pointer;
+    text-align: center;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.text {
+    flex: 1;
+    width: 45%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+    
+.text::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    right: 0;
+    width: 2px;
+    background-color: rgb(160, 157, 157);
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.center button{
+    background-color: orange;
+    color: white;
+}
+.bottom-line {
+    width: 100%;
+}
+
+.second-container{
+    float: right;
+
+    margin: auto;
+    width: 620px;
+    height: 255px;
+    padding: 10px;
+    border: 5px solid crimson;
+}
+.first-container {
+
+    float: right;
+
+    margin: auto;
+    margin-bottom: 10px;
+
+    width: 620px;
+    height: 255px;
+    padding: 10px;
+    border: 5px solid crimson;
+}
+
+section {
+    padding: 0 0;
+    overflow: none;
+   
+}
+.next{
+    display: flex;
+   
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card-container {
+    
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    padding: 50px;
+}
+
+.card {
+    width: 30%;
+    text-align: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.circle img {
+    width: 100%;
+    height: auto;
+}
+
+.qoute{ 
+    font-style: italic;
+    background-image: url(qoute.png);
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    min-height: 150px;
+}
+    
+.bus {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+    color: #29a579;
+    align-items: center;
+}
+.logo-row {
+    display: flex;
+    
+
+}
+  
+.box-text {
+    text-align: left;
+    font-size: 20px;
+}
+.footer-logo {
+    height: 50px;
+    width: 10px;
+}
+
+.logo-row a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.logo-row img {
+    width: 50px;
+}
+    
+@media only screen and (max-width: 500px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    hr {
+            width: 20%;
+            align-items: center;
+            color: green;
+    }
+    .row {
+        flex-direction: column;
+    }
+        .text-container {
+            padding: 0 10px;}
+
+    text {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    
+    .text::before {
+            content: "";
+            position: absolute;
+            top: auto;
+            bottom: 0;
+            right: 0;
+            width: 5px;
+            background-color: gray;
+            }
+}
+
+@media (max-width: 500px) {
+    .corner-box {
+      display: none;
+    }
+    .title-sc {
+        height: fit-content;
+    }
+    .title-next{
+        height: 400px;
+    }
+  }
